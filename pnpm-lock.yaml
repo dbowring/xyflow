@@ -129,8 +129,8 @@ importers:
         specifier: ^5.0.1
         version: 5.0.1
       zustand:
-        specifier: ^4.4.6
-        version: 4.4.6(@types/react@18.2.36)(immer@10.0.4)(react@18.2.0)
+        specifier: ^5.0.2
+        version: 5.0.2(@types/react@18.2.36)(immer@10.0.4)(react@18.2.0)(use-sync-external-store@1.2.0(react@18.2.0))
     devDependencies:
       '@cypress/skip-test':
         specifier: ^2.6.1
@@ -233,8 +233,8 @@ importers:
         specifier: '>=17'
         version: 18.2.0(react@18.2.0)
       zustand:
-        specifier: ^4.4.0
-        version: 4.4.1(@types/react@18.2.24)(immer@10.0.4)(react@18.2.0)
+        specifier: ^4.4.0 || ^5.0.2
+        version: 5.0.2(@types/react@18.2.24)(immer@10.0.4)(react@18.2.0)(use-sync-external-store@1.2.0(react@18.2.0))
     devDependencies:
       '@types/node':
         specifier: ^18.7.16
@@ -6530,13 +6530,14 @@ packages:
   zod@3.21.1:
     resolution: {integrity: sha512-+dTu2m6gmCbO9Ahm4ZBDapx2O6ZY9QSPXst2WXjcznPMwf2YNpn3RevLx4KkZp1OPW/ouFcoBtBzFz/LeY69oA==}
 
-  zustand@4.4.1:
-    resolution: {integrity: sha512-QCPfstAS4EBiTQzlaGP1gmorkh/UL1Leaj2tdj+zZCZ/9bm0WS7sI2wnfD5lpOszFqWJ1DcPnGoY8RDL61uokw==}
-    engines: {node: '>=12.7.0'}
+  zustand@5.0.2:
+    resolution: {integrity: sha512-8qNdnJVJlHlrKXi50LDqqUNmUbuBjoKLrYQBnoChIbVph7vni+sY+YpvdjXG9YLd/Bxr6scMcR+rm5H3aSqPaw==}
+    engines: {node: '>=12.20.0'}
     peerDependencies:
-      '@types/react': '>=16.8'
-      immer: '>=9.0'
-      react: '>=16.8'
+      '@types/react': '>=18.0.0'
+      immer: '>=9.0.6'
+      react: '>=18.0.0'
+      use-sync-external-store: '>=1.2.0'
     peerDependenciesMeta:
       '@types/react':
         optional: true
@@ -6544,20 +6545,7 @@ packages:
         optional: true
       react:
         optional: true
-
-  zustand@4.4.6:
-    resolution: {integrity: sha512-Rb16eW55gqL4W2XZpJh0fnrATxYEG3Apl2gfHTyDSE965x/zxslTikpNch0JgNjJA9zK6gEFW8Fl6d1rTZaqgg==}
-    engines: {node: '>=12.7.0'}
-    peerDependencies:
-      '@types/react': '>=16.8'
-      immer: '>=9.0'
-      react: '>=16.8'
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      immer:
-        optional: true
-      react:
+      use-sync-external-store:
         optional: true
 
   zwitch@2.0.4:
@@ -13700,20 +13688,18 @@ snapshots:
 
   zod@3.21.1: {}
 
-  zustand@4.4.1(@types/react@18.2.24)(immer@10.0.4)(react@18.2.0):
-    dependencies:
-      use-sync-external-store: 1.2.0(react@18.2.0)
+  zustand@5.0.2(@types/react@18.2.24)(immer@10.0.4)(react@18.2.0)(use-sync-external-store@1.2.0(react@18.2.0)):
     optionalDependencies:
       '@types/react': 18.2.24
       immer: 10.0.4
       react: 18.2.0
-
-  zustand@4.4.6(@types/react@18.2.36)(immer@10.0.4)(react@18.2.0):
-    dependencies:
       use-sync-external-store: 1.2.0(react@18.2.0)
+
+  zustand@5.0.2(@types/react@18.2.36)(immer@10.0.4)(react@18.2.0)(use-sync-external-store@1.2.0(react@18.2.0)):
     optionalDependencies:
       '@types/react': 18.2.36
       immer: 10.0.4
       react: 18.2.0
+      use-sync-external-store: 1.2.0(react@18.2.0)
 
   zwitch@2.0.4: {}
